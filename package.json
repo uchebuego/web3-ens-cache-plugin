@@ -1,12 +1,19 @@
 {
   "name": "web3-ens-cache-plugin",
   "packageManager": "yarn@4.2.2",
+  "author": "uchebuego",
+  "main": "lib/index.js",
   "peerDependencies": {
-    "web3": "^4.12.1",
+    "web3": "^4.12.1"
+  },
+  "version": "0.0.1",
+  "dependencies": {
     "web3-eth-ens": "^4.4.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "npm run build",
+    "build": "tsc --build"
   },
   "devDependencies": {
     "@types/jest": "^29.5.13",
